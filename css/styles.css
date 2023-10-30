@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
@@ -40,7 +40,7 @@ img {
 
 /*logotype*/
 .logotype {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
@@ -115,6 +115,12 @@ img {
 }
 .hero {
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/hero/bg.jpg');
+  background-size: cover;
 }
 .name-hero {
   text-align: center;
@@ -246,6 +252,35 @@ img {
 }
 .portfolio-item {
   width: calc(100%-48) / 3;
+  
+  
+}
+
+.overlay {
+  position: relative;
+  overflow: hidden;
+  
+}
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color:#f4f4fd;
+  font-size: 16px;
+font-weight: 400;
+line-height: 1.5;
+letter-spacing: 0.02em;
+  width: 100%;
+  height: 100%;
+  background-color: #4D5AE5;
+  padding: 40px 32px 164px;
+  overflow: auto;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+
+}
+.portfolio-item:hover .overlay-text {
+ transform: translateY(0%); 
 }
 .portfolio-list {
   gap: 24px;
@@ -262,7 +297,7 @@ img {
   width: 264px;
 }
 .footer-link {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 1.17;
