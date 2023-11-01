@@ -38,7 +38,8 @@ img {
 }
 /*header section*/
 .page-header {
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 /*logotype*/
 .logotype {
@@ -62,21 +63,20 @@ img {
 
 /*navigation*/
 .current {
-  position:relative;
+  position: relative;
   color: #404bbf;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current::after {
-content: '';
-position: absolute;
-left: 0;
-bottom: -1px;
-display: block;
-width: 100%;
-height:4px;
-border-radius:2px;
-background-color: #404bbf;
-
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
 }
 .menu-link {
   font-weight: 500;
@@ -142,8 +142,8 @@ background-color: #404bbf;
     url('../images/hero/bg.jpg');
   background-size: cover;
   max-width: 1440px;
-  background-repeat: no-repeat; 
-  background-position: center; 
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .name-hero {
   text-align: center;
@@ -170,7 +170,7 @@ background-color: #404bbf;
   border-radius: 4px;
   display: block;
   padding: 16px 32px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-hero:focus,
 .button-hero:hover {
@@ -225,7 +225,7 @@ background-color: #404bbf;
   height: 112px;
   background-color: #f4f4fd;
   border-radius: 4px;
-  margin-bottom: 8px; 
+  margin-bottom: 8px;
 }
 /*team sectoin*/
 /*h2*/
@@ -270,7 +270,6 @@ background-color: #404bbf;
   display: flex;
   justify-content: center;
   gap: 24px;
- 
 }
 .social-icon {
   margin: auto;
@@ -279,10 +278,10 @@ background-color: #404bbf;
   fill: #f4f4fd;
   border: 1px solid #4d5ae5;
   border-radius: 50%;
-  background-color:#4d5ae5;
+  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
-  display: flex; 
+  display: flex;
 }
 /*portfolio section*/
 .portfolio {
@@ -306,38 +305,35 @@ background-color: #404bbf;
 }
 .portfolio-item {
   width: calc(100%-48) / 3;
-  
-  
 }
 
 .overlay {
   position: relative;
   overflow: hidden;
-  
 }
 .overlay-text {
   position: absolute;
   top: 0;
   left: 0;
-  color:#f4f4fd;
+  color: #f4f4fd;
   font-size: 16px;
-font-weight: 400;
-line-height: 1.5;
-letter-spacing: 0.02em;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
   width: 100%;
   height: 100%;
-  background-color: #4D5AE5;
+  background-color: #4d5ae5;
   padding: 40px 32px;
   overflow: auto;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 .portfolio-item:hover .overlay-text {
- transform: translateY(0%); 
+  transform: translateY(0%);
 }
 .portfolio-item:hover {
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08); 
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list {
@@ -368,8 +364,21 @@ letter-spacing: 0.02em;
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  align-items: baseline;
+}
+.container {
+  margin-right: 120px;
 }
 .footer-logo,
 .footer-text {
   color: #f4f4fd;
+}
+.footer-social-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
