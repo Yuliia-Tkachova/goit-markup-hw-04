@@ -227,8 +227,29 @@ img {
 .team-item-name {
   margin-bottom: 8px;
 }
+.team-text {
+  margin-bottom: 8px;
+}
 .team-card {
   padding: 32px 0;
+}
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+ 
+}
+.social-icon {
+  margin: auto;
+}
+.social-link {
+  fill: #f4f4fd;
+  border: 1px solid #4d5ae5;
+  border-radius: 50%;
+  background-color:#4d5ae5;
+  width: 40px;
+  height: 40px;
+  display: flex; 
 }
 /*portfolio section*/
 .portfolio {
