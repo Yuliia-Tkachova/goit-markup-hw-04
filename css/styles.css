@@ -218,6 +218,15 @@ background-color: #404bbf;
 .features-item {
   width: calc((100% - 72px) / 4);
 }
+.features-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  margin-bottom: 8px; 
+}
 /*team sectoin*/
 /*h2*/
 
