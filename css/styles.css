@@ -145,12 +145,9 @@ img {
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
-  
+  margin: 0 auto;
 }
-.hero-container {
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .name-hero {
   text-align: center;
   font-size: 56px;
